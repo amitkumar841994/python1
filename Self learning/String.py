@@ -1,0 +1,12 @@
+name=input('enter the name for testing is ')
+print(name[1:-1])
+print(name[1])
+print(name[1:])
+print(name[-2:])
+
+print('-----------------String mathod--------------------')
+print((len(name)))
+print(name.upper())
+print(name.lower())
+print(name.find('i'))
+print(name.replace('amit','Amitkumar'))
