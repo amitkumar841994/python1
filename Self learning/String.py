@@ -1,12 +1,10 @@
-name=input('enter the name for testing is ')
-print(name[1:-1])
-print(name[1])
-print(name[1:])
-print(name[-2:])
-
-print('-----------------String mathod--------------------')
-print((len(name)))
-print(name.upper())
-print(name.lower())
-print(name.find('i'))
-print(name.replace('amit','Amitkumar'))
+string='Hello Amitkumar Pal'
+#Reversing Strings
+print("Reversing the strings")
+abc=string[::-1]
+print(abc)
+print('\nReversing string through "JOIN & reversed method"')
+print("".join(reversed(string)))
+#slicing in String
+print("\n slicing in string ")
+print()

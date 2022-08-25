@@ -16,18 +16,18 @@ val=(number,otp)
 mycursor.execute(sql,val)
 mydb.commit()
 
-otp1=int(input("Enter the otp for varification"))
 sql1="select otp from otp where mobile=%s"
 val1=[number]
 mycursor.execute(sql1,val1)
 abc=mycursor.fetchone()
+number1 = str(number)
+number2 = '+91' + number1
+abc2 = str(abc[0])
+pywhatkit.sendwhatmsg_instantly(number2, abc2, 15)
 print(abc[0])
+otp1=int(input("Enter the otp for varification"))
 
 if otp1==abc[0]:
-    number1=str(number)
-    number2='+91'+number1
-    abc2=str(abc)
-    pywhatkit.sendwhatmsg(number2,abc2,23,57,15)
     print("Success")
 else:
     print("failes")
