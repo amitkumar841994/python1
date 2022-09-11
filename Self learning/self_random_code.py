@@ -1,9 +1,9 @@
-n=0
-if (n%2)==1:
-    print('Weird')
-if n>=2 and n<=5 and n%2==0:
-    print("Not Weird")
-elif n>=6 and n<=20 and n%2==0:
-    print("Weird")
-elif n>20 and n%2==0:
-    print("Weird")
+# input size of the list
+n = int(input("Enter the size of list : "))
+# store integrs in a list using map,
+# split and strip functions
+lst = list(map(int, input("Enter the integer\
+elements:").strip().split()))[:n]
+
+# printing the list
+print('The list is:', lst)
